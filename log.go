@@ -6,7 +6,7 @@ type Logger interface {
 	Printf(format string, args ...interface{})
 }
 
-// LoggerProvider provider logger
-type LoggerProvider interface {
+// Provider provider logger
+type Provider interface {
 	Prefix(prefix string) Logger
 }
